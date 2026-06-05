@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Closing Thoughts | Beyond the Substitute
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#0f1720;
+--bg-alt:#182330;
+--gold:#d4af37;
+--cream:#f5efe2;
+--text:#ddd4c4;
+--line:rgba(212,175,55,.15);
+
+}
+
+body{
+
+font-family:Georgia,serif;
+
+background:
+linear-gradient(
+180deg,
+#0f1720,
+#182330,
+#0f1720
+);
+
+color:var(--cream);
+
+line-height:2;
+
+}
+
+.header{
+
+max-width:900px;
+
+margin:auto;
+
+padding:
+110px 25px 70px;
+
+text-align:center;
+
+}
+
+.header h1{
+
+font-size:
+clamp(
+2.5rem,
+6vw,
+4.5rem
+);
+
+margin-bottom:25px;
+
+}
+
+.divider{
+
+width:120px;
+
+height:1px;
+
+background:var(--gold);
+
+margin:auto;
+
+}
+
+.content{
+
+max-width:850px;
+
+margin:auto;
+
+padding:
+80px 25px;
+
+}
+
+.content p{
+
+margin-bottom:35px;
+
+font-size:1.08rem;
+
+color:var(--text);
+
+}
+
+.nav-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+padding:
+20px 25px 90px;
+
+}
+
+.nav-btn{
+
+padding:
+14px 30px;
+
+text-decoration:none;
+
+border-radius:40px;
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid var(--line);
+
+color:var(--cream);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="header">
+
+<h1>
+
+Closing Thoughts
+
+</h1>
+
+<div class="divider"></div>
+
+</section>
+
+<section class="content">
+
+<p>
+
+Thank you for taking this journey.
+
+</p>
+
+<p>
+
+These pages were never written to provide simple answers. Human lives are rarely simple. Every person carries a story filled with victories, failures, questions, disappointments, hopes, wounds, relationships, and moments that shaped the path beneath their feet.
+
+</p>
+
+<p>
+
+The purpose of this series was never to focus solely on addiction. Addiction provided the doorway into a larger conversation about the human heart. Behind every substitute is a person. Behind every person is a story. Within every story exists a longing for peace, acceptance, purpose, healing, and hope.
+
+</p>
+
+<p>
+
+Many substitutes promise relief. Some offer distraction. Others offer temporary comfort. None can ultimately provide the wholeness the heart seeks.
+
+</p>
+
+<p>
+
+Healing begins when honesty replaces denial. Freedom begins when truth becomes more important than escape. Growth begins when courage allows us to face what has been hidden. Purpose begins when we recognize that our story is not finished.
+
+</p>
+
+<p>
+
+Your story is not finished.
+
+</p>
+
+<p>
+
+Certain chapters may have been painful. Certain seasons may have felt overwhelming. Certain losses may still be difficult to understand. None of those realities possess the authority to write the ending.
+
+</p>
+
+<p>
+
+Every new day presents an opportunity to take another step forward. Small steps still move a person forward. Honest steps still move a person forward. Imperfect steps still move a person forward.
+
+</p>
+
+<p>
+
+The journey beyond the substitute is ultimately a journey toward becoming whole. Not perfect. Not flawless. Whole.
+
+</p>
+
+<p>
+
+A future shaped by wisdom rather than regret.
+
+A future shaped by freedom rather than bondage.
+
+A future shaped by purpose rather than survival.
+
+A future shaped by hope rather than fear.
+
+</p>
+
+<p>
+
+May you continue moving forward with courage.
+
+May healing continue where healing is still needed.
+
+May freedom continue growing where freedom has already begun.
+
+May hope remain steady through every season that lies ahead.
+
+</p>
+
+<p>
+
+The substitute no longer has the final word.
+
+</p>
+
+<p>
+
+The story continues.
+
+</p>
+
+<p>
+
+Bradley Hobbs
+
+</p>
+
+</section>
+
+<div class="nav-links">
+
+<a
+href="chapter8.html"
+class="nav-btn">
+
+← Chapter Eight
+
+</a>
+
+<a
+href="index.html"
+class="nav-btn">
+
+Return Home
+
+</a>
+
+</div>
+
+<div id="footer"></div>
+
+<script>
+
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+
+document.getElementById(
+"footer"
+).innerHTML = data;
+
+});
+
+</script>
+
+</body>
+</html>
