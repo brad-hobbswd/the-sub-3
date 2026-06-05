@@ -24,10 +24,16 @@ box-sizing:border-box;
 --bg-main:#0f1720;
 --bg-alt:#182330;
 --gold:#d4af37;
+--gold-light:#e7c86b;
 --cream:#f5efe2;
 --text:#ddd4c4;
+--muted:#bba98d;
 --line:rgba(212,175,55,.15);
 
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -46,18 +52,20 @@ color:var(--cream);
 
 line-height:2;
 
+overflow-x:hidden;
+
 }
 
 .header{
-
-max-width:900px;
-
-margin:auto;
 
 padding:
 110px 25px 70px;
 
 text-align:center;
+
+max-width:900px;
+
+margin:auto;
 
 }
 
@@ -67,8 +75,10 @@ font-size:
 clamp(
 2.5rem,
 6vw,
-4.5rem
+4.8rem
 );
+
+line-height:1.2;
 
 margin-bottom:25px;
 
@@ -139,6 +149,41 @@ border:
 
 color:var(--cream);
 
+transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+transform:
+translateY(-4px);
+
+border-color:var(--gold);
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+padding:
+80px 25px 60px;
+
+}
+
+.content{
+
+padding:
+60px 25px;
+
+}
+
+.content p{
+
+font-size:1rem;
+
+}
+
 }
 
 </style>
@@ -169,73 +214,61 @@ Thank you for taking this journey.
 
 <p>
 
-These pages were never written to provide simple answers. Human lives are rarely simple. Every person carries a story filled with victories, failures, questions, disappointments, hopes, wounds, relationships, and moments that shaped the path beneath their feet.
+The Substitute began with a question about addiction and the things people use while searching for relief, peace, acceptance, and escape. Beyond the Substitute continued that journey by exploring healing, forgiveness, identity, freedom, purpose, and the life that remains after the substitute is no longer needed.
 
 </p>
 
 <p>
 
-The purpose of this series was never to focus solely on addiction. Addiction provided the doorway into a larger conversation about the human heart. Behind every substitute is a person. Behind every person is a story. Within every story exists a longing for peace, acceptance, purpose, healing, and hope.
+Throughout these pages, one truth has appeared again and again. Behind every struggle is a person. Behind every person is a story. Within every story is a heart searching for something meaningful.
 
 </p>
 
 <p>
 
-Many substitutes promise relief. Some offer distraction. Others offer temporary comfort. None can ultimately provide the wholeness the heart seeks.
+Many people spend years believing their struggles define them. Others become convinced that their wounds will always determine their future. Life often feels smaller when viewed through those lenses. Healing begins expanding that vision and revealing possibilities that once seemed impossible.
 
 </p>
 
 <p>
 
-Healing begins when honesty replaces denial. Freedom begins when truth becomes more important than escape. Growth begins when courage allows us to face what has been hidden. Purpose begins when we recognize that our story is not finished.
+Freedom does not arrive because the past disappears. Freedom grows when the past no longer controls the direction of the future. The wounds remain part of the story, yet they no longer stand at the center of it. The mistakes remain part of the story, yet they no longer possess the final word.
 
 </p>
 
 <p>
 
-Your story is not finished.
+A future built upon wisdom, healing, purpose, faith, and hope remains possible regardless of what came before. Every day presents another opportunity to move forward, to grow, to learn, and to become more whole than the day before.
 
 </p>
 
 <p>
 
-Certain chapters may have been painful. Certain seasons may have felt overwhelming. Certain losses may still be difficult to understand. None of those realities possess the authority to write the ending.
+The goal has never been perfection.
 
 </p>
 
 <p>
 
-Every new day presents an opportunity to take another step forward. Small steps still move a person forward. Honest steps still move a person forward. Imperfect steps still move a person forward.
+The goal has always been healing.
 
 </p>
 
 <p>
 
-The journey beyond the substitute is ultimately a journey toward becoming whole. Not perfect. Not flawless. Whole.
+The goal has always been freedom.
 
 </p>
 
 <p>
 
-A future shaped by wisdom rather than regret.
-
-A future shaped by freedom rather than bondage.
-
-A future shaped by purpose rather than survival.
-
-A future shaped by hope rather than fear.
+The goal has always been becoming the person hidden beneath the substitute.
 
 </p>
 
 <p>
 
-May you continue moving forward with courage.
-
-May healing continue where healing is still needed.
-
-May freedom continue growing where freedom has already begun.
-
-May hope remain steady through every season that lies ahead.
+Thank you for reading, reflecting, and walking through this journey.
 
 </p>
 
@@ -270,10 +303,10 @@ class="nav-btn">
 </a>
 
 <a
-href="index.html"
+href="about.html"
 class="nav-btn">
 
-Return Home
+About the Author →
 
 </a>
 
