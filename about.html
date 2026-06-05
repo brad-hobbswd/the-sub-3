@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+About the Author | Bradley Hobbs
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#0f1720;
+--bg-alt:#182330;
+--gold:#d4af37;
+--gold-light:#e7c86b;
+--cream:#f5efe2;
+--text:#ddd4c4;
+--muted:#bba98d;
+--line:rgba(212,175,55,.15);
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:Georgia,serif;
+
+background:
+linear-gradient(
+180deg,
+#0f1720,
+#182330,
+#0f1720
+);
+
+color:var(--cream);
+
+line-height:2;
+
+overflow-x:hidden;
+
+}
+
+.header{
+
+padding:
+110px 25px 70px;
+
+text-align:center;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.header h1{
+
+font-size:
+clamp(
+2.5rem,
+6vw,
+4.8rem
+);
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.divider{
+
+width:120px;
+
+height:1px;
+
+background:var(--gold);
+
+margin:auto;
+
+}
+
+.content{
+
+max-width:850px;
+
+margin:auto;
+
+padding:
+80px 25px;
+
+}
+
+.content p{
+
+margin-bottom:35px;
+
+font-size:1.08rem;
+
+color:var(--text);
+
+}
+
+.nav-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+padding:
+20px 25px 90px;
+
+}
+
+.nav-btn{
+
+padding:
+14px 30px;
+
+text-decoration:none;
+
+border-radius:40px;
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid var(--line);
+
+color:var(--cream);
+
+transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+transform:
+translateY(-4px);
+
+border-color:var(--gold);
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+padding:
+80px 25px 60px;
+
+}
+
+.content{
+
+padding:
+60px 25px;
+
+}
+
+.content p{
+
+font-size:1rem;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="header">
+
+<h1>
+
+About the Author
+
+</h1>
+
+<div class="divider"></div>
+
+</section>
+
+<section class="content">
+
+<p>
+
+Bradley Hobbs is a writer, educator, and advocate for healing whose work explores faith, recovery, emotional growth, identity, and the deeper questions that shape human experience. Through books, devotionals, studies, and articles, he seeks to encourage honest reflection while helping readers discover hope beyond life's most difficult struggles.
+
+</p>
+
+<p>
+
+His writing is often inspired by personal experience, conversations within recovery communities, spiritual reflection, and a desire to understand the stories that exist beneath visible struggles. Rather than focusing only on behaviors or circumstances, Bradley explores the emotional, relational, and spiritual realities that influence the human heart.
+
+</p>
+
+<p>
+
+The Substitute series was written from the perspective of someone affected by addiction within the family rather than from addiction itself. Years of observation, learning, recovery education, and participation in Al-Anon helped shape a growing conviction that many destructive patterns point toward deeper unmet needs, wounds, fears, and longings.
+
+</p>
+
+<p>
+
+Beyond the Substitute continues that journey by exploring healing, forgiveness, freedom, identity, purpose, and hope. Together, these books invite readers to look beneath the surface of struggle and discover the possibility of lasting transformation.
+
+</p>
+
+<p>
+
+Beyond recovery topics, Bradley writes extensively about faith, healing, church hurt, fear, spiritual growth, emotional restoration, and the hope found in Jesus. His goal is to create resources that encourage compassion, honesty, understanding, and meaningful growth.
+
+</p>
+
+<p>
+
+Through every project, the mission remains simple: to help people discover that their struggles do not have the final word and that healing, freedom, and purpose remain possible.
+
+</p>
+
+<p>
+
+Thank you for reading and being part of this journey.
+
+</p>
+
+<p>
+
+Bradley Hobbs
+
+</p>
+
+</section>
+
+<div class="nav-links">
+
+<a
+href="closing-thoughts.html"
+class="nav-btn">
+
+← Closing Thoughts
+
+</a>
+
+<a
+href="index.html"
+class="nav-btn">
+
+Book Home →
+
+</a>
+
+</div>
+
+<div id="footer"></div>
+
+<script>
+
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+
+document.getElementById(
+"footer"
+).innerHTML = data;
+
+});
+
+</script>
+
+</body>
+</html>
